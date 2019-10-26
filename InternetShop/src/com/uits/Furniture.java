@@ -1,4 +1,4 @@
-package com.uits.task13;
+package com.uits;
 
 public class Furniture extends Store implements Goods{
     String color;

@@ -8,7 +8,7 @@ a) аутентификация пользователя. Пользовател
 Можете добавить свои операции или изменить что-то на свой вкус.
 */
 
-package com.uits.task13;
+package com.uits;
 
 public class InternetShop {
     public static void main( String[] args ) {
