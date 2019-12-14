@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Lingvist {
     public static void main( String[] args ) {
-        System.out.print("Добро пожаловать! Чтобы провести транслитерацию имен собсвенных  выбырете таблицу");
+        System.out.print("Добро пожаловать! Чтобы провести транслитерацию имен собсвенных  выбырете таблицу\n");
 
         File myFile = new File("/home/anna/TranslitTables");
         System.out.println("File name: " + myFile.getName());
@@ -27,7 +27,5 @@ public class Lingvist {
 
 
     }
-}
 
-    }
 }
