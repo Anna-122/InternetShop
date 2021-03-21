@@ -76,7 +76,7 @@ public class UserService  implements UsersDao {
             ResultSet resultSet = statement.executeQuery(sql);
 
             while (resultSet.next()) {
-                Users users = new Users();
+                Users users = new Users(1, "Anna", "Goncharova", "Sergeevna", "F", "@eerrrr", "an123", "12345", "12.08.2001", 1, 1, "Green_Street", "12f", "1", 1);
                 users.setUser_id(resultSet.getInt("user_id"));
                 users.setUser_name(resultSet.getString("user_name"));
                 users.setUser_surname(resultSet.getString("user_surname"));
@@ -115,7 +115,7 @@ public class UserService  implements UsersDao {
                 " \"user_middle_name,user_sex,user_email,user_username,user_password,user_birthday,user_country_id,\" +\n" +
                 " \"user_city_id,user_street,user_house_number,user_flat_number,user_type_id FROM Users WHERE user_id=?";
 
-        Users users = new Users();
+        Users users = new Users(1, "Anna", "Goncharova", "Sergeevna", "F", "@eerrrr", "an123", "12345", "12.08.2001", 1, 1, "Green_Street", "12f", "1", 1);
         try {
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setLong(1, user_id);

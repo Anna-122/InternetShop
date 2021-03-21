@@ -1,5 +1,6 @@
 package entity;
 
+import java.util.Calendar;
 import java.util.Date;
 
 
@@ -20,7 +21,7 @@ public class Users {
     private String user_flat_number;
     private int user_type_id;
 
-    public Users( int user_id, String user_name, String user_surname, String user_middle_name, String user_sex, String user_email, String user_username, String user_password, Date user_birthday, int user_country_id, int user_city_id, String user_street, String user_house_number, String user_flat_number, int user_type_id ) {
+    public Users(int user_id, String user_name, String user_surname, String user_middle_name, String user_sex, String user_email, String user_username, String user_password, Calendar user_birthday, int user_country_id, int user_city_id, String user_street, String user_house_number, String user_flat_number, int user_type_id ) {
         this.user_id = user_id;
         this.user_name = user_name;
         this.user_surname = user_surname;
@@ -37,7 +38,7 @@ public class Users {
         this.user_flat_number = user_flat_number;
         this.user_type_id = user_type_id;
     }
-    public Users(){
+    public Users(int user_id, String anna, String goncharova, String sergeevna, String f, String user_email, String an123, String user_password, String s, int user_country_id, int user_city_id, String green_street, String user_house_number, String user_flat_number, int user_type_id){
 
     }
 
