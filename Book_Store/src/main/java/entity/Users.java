@@ -1,7 +1,6 @@
 package entity;
 
 import java.util.Calendar;
-import java.util.Date;
 
 
 public class Users {
@@ -13,7 +12,7 @@ public class Users {
     private String user_email;
     private String user_username;
     private String user_password;
-    private Date user_birthday;
+    private String user_birthday;
     private int user_country_id;
     private int user_city_id;
     private String user_street;
@@ -21,7 +20,7 @@ public class Users {
     private String user_flat_number;
     private int user_type_id;
 
-    public Users(int user_id, String user_name, String user_surname, String user_middle_name, String user_sex, String user_email, String user_username, String user_password, Calendar user_birthday, int user_country_id, int user_city_id, String user_street, String user_house_number, String user_flat_number, int user_type_id ) {
+    public Users(int user_id, String user_name, String user_surname, String user_middle_name, String user_sex, String user_email, String user_username, String user_password, String user_birthday, int user_country_id, int user_city_id, String user_street, String user_house_number, String user_flat_number, int user_type_id) {
         this.user_id = user_id;
         this.user_name = user_name;
         this.user_surname = user_surname;
@@ -38,7 +37,8 @@ public class Users {
         this.user_flat_number = user_flat_number;
         this.user_type_id = user_type_id;
     }
-    public Users(int user_id, String anna, String goncharova, String sergeevna, String f, String user_email, String an123, String user_password, String s, int user_country_id, int user_city_id, String green_street, String user_house_number, String user_flat_number, int user_type_id){
+
+    public Users (){
 
     }
 
@@ -46,7 +46,7 @@ public class Users {
         return user_id;
     }
 
-    public void setUser_id( int user_id ) {
+    public void setUser_id(int user_id) {
         this.user_id = user_id;
     }
 
@@ -54,7 +54,7 @@ public class Users {
         return user_name;
     }
 
-    public void setUser_name( String user_name ) {
+    public void setUser_name(String user_name) {
         this.user_name = user_name;
     }
 
@@ -62,7 +62,7 @@ public class Users {
         return user_surname;
     }
 
-    public void setUser_surname( String user_surname ) {
+    public void setUser_surname(String user_surname) {
         this.user_surname = user_surname;
     }
 
@@ -70,7 +70,7 @@ public class Users {
         return user_middle_name;
     }
 
-    public void setUser_middle_name( String user_middle_name ) {
+    public void setUser_middle_name(String user_middle_name) {
         this.user_middle_name = user_middle_name;
     }
 
@@ -78,7 +78,7 @@ public class Users {
         return user_sex;
     }
 
-    public void setUser_sex( String user_sex ) {
+    public void setUser_sex(String user_sex) {
         this.user_sex = user_sex;
     }
 
@@ -86,7 +86,7 @@ public class Users {
         return user_email;
     }
 
-    public void setUser_email( String user_email ) {
+    public void setUser_email(String user_email) {
         this.user_email = user_email;
     }
 
@@ -94,7 +94,7 @@ public class Users {
         return user_username;
     }
 
-    public void setUser_username( String user_username ) {
+    public void setUser_username(String user_username) {
         this.user_username = user_username;
     }
 
@@ -102,15 +102,15 @@ public class Users {
         return user_password;
     }
 
-    public void setUser_password( String user_password ) {
+    public void setUser_password(String user_password) {
         this.user_password = user_password;
     }
 
-    public Date getUser_birthday() {
+    public String getUser_birthday() {
         return user_birthday;
     }
 
-    public void setUser_birthday( Date user_birthday ) {
+    public void setUser_birthday(String user_birthday) {
         this.user_birthday = user_birthday;
     }
 
@@ -118,7 +118,7 @@ public class Users {
         return user_country_id;
     }
 
-    public void setUser_country_id( int user_country_id ) {
+    public void setUser_country_id(int user_country_id) {
         this.user_country_id = user_country_id;
     }
 
@@ -126,7 +126,7 @@ public class Users {
         return user_city_id;
     }
 
-    public void setUser_city_id( int user_city_id ) {
+    public void setUser_city_id(int user_city_id) {
         this.user_city_id = user_city_id;
     }
 
@@ -134,7 +134,7 @@ public class Users {
         return user_street;
     }
 
-    public void setUser_street( String user_street ) {
+    public void setUser_street(String user_street) {
         this.user_street = user_street;
     }
 
@@ -142,7 +142,7 @@ public class Users {
         return user_house_number;
     }
 
-    public void setUser_house_number( String user_house_number ) {
+    public void setUser_house_number(String user_house_number) {
         this.user_house_number = user_house_number;
     }
 
@@ -150,7 +150,7 @@ public class Users {
         return user_flat_number;
     }
 
-    public void setUser_flat_number( String user_flat_number ) {
+    public void setUser_flat_number(String user_flat_number) {
         this.user_flat_number = user_flat_number;
     }
 
@@ -158,7 +158,7 @@ public class Users {
         return user_type_id;
     }
 
-    public void setUser_type_id( int user_type_id ) {
+    public void setUser_type_id(int user_type_id) {
         this.user_type_id = user_type_id;
     }
 
@@ -169,16 +169,16 @@ public class Users {
                 ", user_name='" + user_name + '\'' +
                 ", user_surname='" + user_surname + '\'' +
                 ", user_middle_name='" + user_middle_name + '\'' +
-                ", user_sex=" + user_sex +
-                ", user_email=" + user_email +
+                ", user_sex='" + user_sex + '\'' +
+                ", user_email='" + user_email + '\'' +
                 ", user_username='" + user_username + '\'' +
-                ", user_password=" + user_password +
-                ", user_birthday=" + user_birthday +
+                ", user_password='" + user_password + '\'' +
+                ", user_birthday='" + user_birthday + '\'' +
                 ", user_country_id=" + user_country_id +
                 ", user_city_id=" + user_city_id +
                 ", user_street='" + user_street + '\'' +
-                ", user_house_number=" + user_house_number +
-                ", user_flat_number=" + user_flat_number +
+                ", user_house_number='" + user_house_number + '\'' +
+                ", user_flat_number='" + user_flat_number + '\'' +
                 ", user_type_id=" + user_type_id +
                 '}';
     }

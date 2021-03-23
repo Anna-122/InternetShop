@@ -6,6 +6,7 @@ import entity.Users;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class UserService  implements UsersDao {
@@ -34,7 +35,7 @@ public class UserService  implements UsersDao {
             preparedStatement.setString(6, String.valueOf(users.getUser_email()));
             preparedStatement.setString(7, String.valueOf(users.getUser_username()));
             preparedStatement.setString(8, String.valueOf(users.getUser_password()));
-            preparedStatement.setDate(9, (Date) users.getUser_birthday());
+            preparedStatement.setString(9,  users.getUser_birthday());
             preparedStatement.setInt(10,users.getUser_country_id());
             preparedStatement.setInt(11,users.getUser_city_id());
             preparedStatement.setString(12,users.getUser_street());
@@ -85,7 +86,7 @@ public class UserService  implements UsersDao {
                 users.setUser_email(resultSet.getString("user_email"));
                 users.setUser_username(resultSet.getString("user_username"));
                 users.setUser_password(resultSet.getString("user_password"));
-                users.setUser_birthday(resultSet.getDate("user_birthday"));
+                users.setUser_birthday(resultSet.getString("user_birthday"));
                 users.setUser_country_id(resultSet.getInt("user_country_id"));
                 users.setUser_city_id(resultSet.getInt("user_city_id"));
                 users.setUser_street(resultSet.getString("user_street"));
@@ -130,7 +131,7 @@ public class UserService  implements UsersDao {
             users.setUser_email(resultSet.getString("user_email"));
             users.setUser_username(resultSet.getString("user_username"));
             users.setUser_password(resultSet.getString("user_password"));
-            users.setUser_birthday(resultSet.getDate("user_birthday"));
+            users.setUser_birthday(resultSet.getString("user_birthday"));
             users.setUser_country_id(resultSet.getInt("user_country_id"));
             users.setUser_city_id(resultSet.getInt("user_city_id"));
             users.setUser_street(resultSet.getString("user_street"));
